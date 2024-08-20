@@ -14,12 +14,14 @@ def timed (n):
         print('Largest prime factor of {} is {}. Execution: {}.'.format(n, result,duration));    
  
 def largestPrimeFactor(number):
-    if number>1:
+    if number>1 and primeCheck(number)==False:
         for i in range(int(number**0.5),1,-1):
             if number%i==0 and primeCheck(i):
                 return i;
+    elif number>1 and primeCheck(number):
+        return number;
     else:
-        return None
+        return None;
 
     
 def primeCheck(number):
