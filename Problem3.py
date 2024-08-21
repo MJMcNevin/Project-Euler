@@ -17,7 +17,11 @@ def largestPrimeFactor(number):
     if number>1 and primeCheck(number)==False:
         for i in range(int(number**0.5),1,-1):
             if number%i==0 and primeCheck(i):
-                return i;
+                number_pair=number/i;
+                if number_pair>i and primeCheck(number_pair):
+                    return number_pair;
+                else:
+                    return i;
     elif number>1 and primeCheck(number):
         return number;
     else:
@@ -35,5 +39,4 @@ def primeCheck(number):
 
 
 number=input('Number to check: ');
-number=int(number);
 timed(number);
