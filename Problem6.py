@@ -26,10 +26,9 @@ def squareOfSum(a,z):
 frstNumber=int(input('Start number to check: '));
 lstNumber=int(input('End number to check: '));
 start=time.time(); 
-print('The sum of the squares of the natural numbers between ',frstNumber,' and ', lstNumber,' is ',sumOfSquares(frstNumber,lstNumber),'.')
-print('The square of the sum of the natural numbers between ',frstNumber,' and ', lstNumber,' is ',squareOfSum(frstNumber,lstNumber),'.')
-print('The difference between the sum of the squares of ',frstNumber,' and ', lstNumber,' and the square of the sum is ',squareOfSum(frstNumber,lstNumber)-sumOfSquares(frstNumber,lstNumber),'.')
-
+print('The sum of the squares of the natural numbers between',frstNumber,'and',lstNumber,'is',sumOfSquares(frstNumber,lstNumber),'.')
+print('The square of the sum of the natural numbers between ',frstNumber,'and', lstNumber,'is',squareOfSum(frstNumber,lstNumber),'.')
+print('The difference between the sum of the squares of',frstNumber,'and', lstNumber,'and the square of the sum is',squareOfSum(frstNumber,lstNumber)-sumOfSquares(frstNumber,lstNumber),'.')
 end = time.time();
 duration = float(end) - float(start);
 print('It took',duration,'to run the program');
